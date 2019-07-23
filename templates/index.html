@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- Header -->
+
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+          <div class="page-title">
+              <h1 class="mb-1">User Statistics Dashboard</h1>
+              <h3 id='total_users_text' class="text-center">
+                Total Number of Users:
+            </h3>
+          </div>
+
+    <div class="row">
+
+	  <div class="col-sm-12">
+          <h4 class="lg-padding">Age Distribution</h4>
+      <svg width="400" height="300" id="scatter"></svg>
+    </div>
+
+	 </div>
+  </div>
+</header>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!--<script src="/static/js/scatterPlot.js"></script>-->
+
+{% endblock %}
